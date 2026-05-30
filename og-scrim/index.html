@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Only么Gods Esports Scrim Scheduling Hub">
+    <meta name="theme-color" content="#050508">
+    <title>Only么Gods | Scrim Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="logo-container">
+            <div class="logo-glow"></div>
+            <!-- Replace src with your actual clan logo -->
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L85 80 L15 80 Z' fill='%2300f3ff' opacity='0.8'/%3E%3Cpath d='M50 25 L75 75 L25 75 Z' fill='%23b026ff'/%3E%3C/svg%3E" alt="Only么Gods Logo" class="logo">
+        </div>
+        
+        <h1 class="clan-name">𝙾𝚗𝚕𝚢么𝙶𝚘𝚍𝚜</h1>
+        
+        <div class="event-panel glass-panel">
+            <h2 id="event-name">Loading Event...</h2>
+            
+            <div class="datetime-display">
+                <p id="local-date" class="local-date">--</p>
+                <p id="local-time" class="local-time">--</p>
+            </div>
+            <p class="timezone-note">⏱ Displayed in your local time</p>
+            
+            <div id="countdown-container" class="countdown">
+                <div class="unit"><span id="days">00</span><span>Days</span></div>
+                <div class="unit"><span id="hours">00</span><span>Hours</span></div>
+                <div class="unit"><span id="minutes">00</span><span>Mins</span></div>
+                <div class="unit"><span id="seconds">00</span><span>Secs</span></div>
+            </div>
+            
+            <div id="live-status" class="live-status hidden">🔥 SCRIM LIVE NOW</div>
+            <div id="ended-status" class="ended-status hidden">✅ Scrim Ended — Waiting for next event</div>
+        </div>
+        
+        <a href="admin.html" class="admin-link">🔐 Admin Access</a>
+    </main>
+    <script src="event.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
